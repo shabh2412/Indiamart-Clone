@@ -1,0 +1,57 @@
+.bg-blue{
+  background-color: #2f3192;
+}
+.text-blue {
+  color: #2f3192;
+}
+.w-95 {
+  width: 95%;
+}
+.white-filter, #navbarRightContent > .btn > img {
+  filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(9deg) brightness(109%) contrast(97%);
+}
+.blue-filter {
+  filter: invert(15%) sepia(22%) saturate(7449%) hue-rotate(232deg) brightness(105%) contrast(96%);
+}
+#navbarRightContent > .btn > p{
+  color: white;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.btn.bg-white:hover {
+  color: black;
+}
+.btn.bg-white:active, .btn.bg-white.show {
+  color: black;
+}
+.navbar > .container-fluid > * {
+  color: white;
+}
+#navbar-main .btn, #navbar-main #searchProduct {
+  font-size: 14px;
+}
+.main-nav-brand {
+  height: 40px;
+  width: 150px;
+}
+.site-logo {
+  background-image: url('../assets/logo.png');
+  background-size: 110%;
+  /* background-size: 150%;
+  background-position: 85px -5px; */
+  background-repeat: no-repeat;
+}
+.dropdown-menu > form > ul {
+  list-style: none;
+}
+.dropdown-toggle.show::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-bottom: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-top: 0;
+  border-left: 0.3em solid transparent;
+}
