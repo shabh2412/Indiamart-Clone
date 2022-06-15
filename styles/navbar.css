@@ -1,8 +1,35 @@
 .bg-blue{
   background-color: #2f3192;
 }
+.btn-teal {
+  background-color: #017168;
+  color: white;
+}
+.btn-teal:hover {
+  background-color: #017168;
+  color: white;
+  border: black solid 1px;
+}
 .text-blue {
   color: #2f3192;
+}
+.smaller {
+  font-size: 0.8em;
+}
+.w-10 {
+  width: 10%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-85 {
+  width: 85%;
 }
 .w-95 {
   width: 95%;
@@ -85,4 +112,41 @@
 
 .checked {
   color: orange;
+}
+
+
+#userBtnDropdownMenu {
+  z-index: 10000;
+  right: 15px;
+}
+
+#userBtnDropdownMenu > .row > .col-2 > .navbar-nav > .nav-item {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#userBtnDropdownMenu > .row > .col-2 > .navbar-nav > .nav-item:hover {
+  background-color: #f1f1f1;
+}
+
+#userBtnDropdownMenu > .row > .col-2 > .navbar-nav > .nav-item a {
+  padding: 10px 0 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.bg-light-purple {
+  background-color: #eaeaf4;
+}
+
+#businessNavbar ul li a {
+  padding: 10px 30px;
+}
+
+#businessNavbar ul li a.nav-link {
+  color: black;
+}
+
+#businessNavbar ul li a.nav-link.active {
+  background-color: #2f3192;
+  color: white;
 }
