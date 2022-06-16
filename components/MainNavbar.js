@@ -13,6 +13,7 @@ let MainNavbar = ()=>{
   bootstrapScript.crossorigin = 'anonymous';
   document.head.append(bootstrapCss, navbarCss);
   document.body.append(bootstrapScript);
+  let currentUser = JSON.parse(localStorage.getItem('currentUser')) || {};
   // console.log(document.body);
   let nav = `<nav id="navbar-main" class="navbar navbar-expand bg-blue sticky-top">
   <div class="container-fluid w-100 mx-auto">
@@ -56,7 +57,7 @@ let MainNavbar = ()=>{
         <div class="col-2">
           <button class="btn text-capitalize bg-white rounded-0 fw-bold">Get best price</button>
         </div>
-        <div id="navbarRightContent" class="col-5 d-flex justify-content-end align-items-center">
+        <div id="navbarRightContent" class="col-5 d-flex justify-content-center align-items-center">
           <button class="btn rounded-0 text-white border-0 fs-12">
             <img src="./assets/shoppingTag.svg" style="transform: scaleX(-1);" alt="">
             <p class="mb-0">
@@ -102,8 +103,8 @@ let MainNavbar = ()=>{
   <div class="row justify-content-end">
     <div class="col-2 bg-white border p-0">
       <div class="d-flex flex-column bg-white border-bottom align-items-center py-2 w-100 top-0">
-        <button class="btn btn-success rounded-1 fs-14">Sign In</button>
-        <small class="smaller text-muted pt-2">New to IndiaMART? <a onclick="showSignUp();" class="btn-link" style="cursor: pointer;">Join Now</a></small>
+        ${currentUser.contact===undefined ? '<button class="btn btn-success rounded-1 fs-14" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</button>' : ''}
+        ${currentUser.contact === undefined ? '<small class="smaller text-muted pt-2">New to IndiaMART? <a onclick="showSignUp();" href="#signupModal" data-bs-toggle="modal" class="btn-link" style="cursor: pointer;">Join Now</a></small>' : '<small class="smaller text-muted pt-2">+91-'+currentUser.contact+'</small>'}
       </div>
       <ul class="navbar-nav">
         <li class="nav-item px-1">
@@ -142,6 +143,7 @@ let MainNavbar = ()=>{
             Settings
           </a>
         </li>
+        ${currentUser.contact !== undefined ? '<li class="nav-item"><a onclick="logout()" style="cursor:pointer;" class="nav-link text-capitalize"><i class="bi bi-box-arrow-left"></i> Logout</a></li>' : ''}
       </ul>
     </div>
   </div>

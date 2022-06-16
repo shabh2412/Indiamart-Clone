@@ -116,7 +116,7 @@
 
 
 #userBtnDropdownMenu {
-  z-index: 10000;
+  z-index: 1;
   right: 15px;
 }
 
