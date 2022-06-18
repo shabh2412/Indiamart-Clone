@@ -5,8 +5,87 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dummy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
-  
+  <div class="container-fluid px-0">
+    <div class="container w-100 mx-auto bg-white px-1">
+      <nav class="navbar navbar-expand">
+        <div class="container-fluid justify-content-between align-items-end px-0">
+          <div class="d-flex align-items-center w-85 mx-auto">
+            <img src="https://3.imimg.com/data3/HJ/OY/MY-3792183/blue-heaven-cosmetics-private-limited-logo-120x120.jpg" alt="brand-logo" class="navbar-brand brand-logo">
+            <div class="nameAndAddress">
+              <h2 class="text-black">${businessName}</h2>
+              <div class="row align-items-center">
+                <div class="d-flex">
+                  <img src="./assets/location.svg" alt="location" class="icon mx-2 light-gray-filter">
+                  <p class="fs-14 mb-0">${address}</p>
+                </div>
+                <div class="d-flex">
+                  <img src="./assets/verified.svg" alt="verified" class="icon mx-2 grass-green-filter">
+                  <p class="fs-14 mb-0">GST <span class="fw-bold">${GST}</span> | </p>
+                </div>
+                <div class="d-flex">
+                  <img src="./assets/patchCheck.svg" alt="patchCheck" class="icon mx-2">
+                  <p class="fs-14 mb-0"><span class="fw-bold">Verified</span> Supplier | </p>
+                </div>
+                <div class="d-flex">
+                  <img src="./assets/thumbsUp.svg" alt="thumbsUp" class="icon mx-2">
+                  <p class="fs-14 mb-0">
+                    <span class="fw-bold fs-16">${rating}</span>/5 
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+              </div>
+            </div>
+          </div>
+          <div class="w-20 ps-1">
+            <button class="btn btn-outline-success w-100">
+              <i class="bi bi-telephone-fill"></i>
+              View Mobile Number
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="businessNavbar" class="navbar navbar-expand-md mx-auto p-0">
+            <div class="container-fluid px-0">
+              <div class="navbar-collapse justify-content-between gap-2">
+                <ul class="navbar-nav me-auto bg-light-purple w-85">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link active">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./productsServices.html" class="nav-link">Products & Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="w-20">
+                  <button class="btn btn-teal border-0 rounded-0 py-2 fw-bold w-100">
+                    <i class="bi bi-envelope-fill"></i>
+                    Send Email
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+  </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script>
+</script>

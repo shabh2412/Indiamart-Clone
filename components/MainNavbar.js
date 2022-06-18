@@ -17,12 +17,17 @@ let MainNavbar = ()=>{
   // console.log(document.body);
   let nav = `<nav id="navbar-main" class="navbar navbar-expand bg-blue sticky-top">
   <div class="container-fluid w-100 mx-auto">
-    <a href="./index.html" class="navbar-brand main-nav-brand site-logo"></a>
     <div class="container">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-5">
+      <div class="row justify-content-between align-items-center gy-2">
+        <div class="col-lg-1 col-md-12 col-sm-12 col-xs-12 px-0">
+          <a href="./index.html" class="d-flex">
+            <div class="main-nav-brand site-logo p-0 mx-auto"></div>
+          </a>
+        </div>
+        <!-- Search bar (location & product search) -->
+        <div class="col-lg-5 col-md-12 col-xs-12 px-0">
           <div class="row align-items-center">
-            <div class="col-3 d-flex align-items-center pe-0">
+            <div class="col-3 col-xs-12 d-flex align-items-center pe-0">
               <div class="dropdown w-100">
                 <button class="btn text-blue bg-white dropdown-toggle w-100 fw-bold rounded-0" data-bs-toggle="dropdown">
                   <img src="./assets/location.svg" alt="location" class="blue-filter">
@@ -43,10 +48,10 @@ let MainNavbar = ()=>{
                 </div>
               </div>
             </div>
-            <div class="col-6 px-0">
+            <div class="col-6 col-xs-12 px-0">
               <input type="text" class="form-control text-black rounded-0" id="searchProduct" placeholder="Enter Product/Service to Search">
             </div>
-            <div class="col-3 px-0">
+            <div class="col-3 col-xs-12 px-0">
               <button class="btn btn-success w-100 rounded-0">
                 <img src="./assets/search.svg" alt="search icon">
                 Search
@@ -54,46 +59,60 @@ let MainNavbar = ()=>{
             </div>
           </div>
         </div>
-        <div class="col-2">
-          <button class="btn text-capitalize bg-white rounded-0 fw-bold">Get best price</button>
+        <div class="col-lg-1_5 col-md-5 col-xs-12 d-flex">
+          <button class="btn text-capitalize bg-white rounded-0 fw-bold mx-auto">Get best price</button>
         </div>
-        <div id="navbarRightContent" class="col-5 d-flex justify-content-center align-items-center">
-          <button class="btn rounded-0 text-white border-0 fs-12">
-            <img src="./assets/shoppingTag.svg" style="transform: scaleX(-1);" alt="">
-            <p class="mb-0">
-              Shopping
-            </p>
-          </button>
-          <button class="btn rounded-0 text-white border-0 fs-12">
-            <img src="./assets/covidShield.svg" alt="shield">
-            <p class="mb-0">
-              Covid Supplies
-            </p>
-          </button>
-          <button class="btn rounded-0 text-white border-0 fs-12">
-            <img src="./assets/shop.svg" alt="shop">
-            <p class="mb-0">
-              Sell
-            </p>
-          </button>
-          <button class="btn rounded-0 text-white border-0 fs-12">
-            <img src="./assets/help.svg" alt="help">
-            <p class="mb-0">
-              Help
-            </p>
-          </button>
-          <button class="btn rounded-0 text-white border-0 fs-12">
-            <img src="./assets/chat.svg" alt="chat">
-            <p class="mb-0">
-              Messages
-            </p>
-          </button>  
-          <button id="userBtn" class="btn rounded-0 text-white border-0 fs-12">
-            <img src="./assets/user.svg" alt="user">
-            <p id="greetUser" class="mb-0">
-              Hi Guest!
-            </p>
-          </button>
+        <div id="navbarRightContent" class="col-lg-4 col-md-12 col-xs-12 d-flex justify-content-center align-items-center">
+          <div class="row w-100">
+            <div class="col-lg-2 col-md-2 col-xs-4">
+              <button class="btn rounded-0 text-white border-0 fs-12">
+                <img src="./assets/shoppingTag.svg" style="transform: scaleX(-1);" alt="">
+                <p class="mb-0">
+                  Shopping
+                </p>
+              </button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4">
+              <button class="btn rounded-0 text-white border-0 fs-12">
+                <img src="./assets/covidShield.svg" alt="shield">
+                <p class="mb-0">
+                  Covid Supplies
+                </p>
+              </button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4">
+              <button class="btn rounded-0 text-white border-0 fs-12">
+                <img src="./assets/shop.svg" alt="shop">
+                <p class="mb-0">
+                  Sell
+                </p>
+              </button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4">
+              <button class="btn rounded-0 text-white border-0 fs-12">
+                <img src="./assets/help.svg" alt="help">
+                <p class="mb-0">
+                  Help
+                </p>
+              </button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4">
+              <button class="btn rounded-0 text-white border-0 fs-12">
+                <img src="./assets/chat.svg" alt="chat">
+                <p class="mb-0">
+                  Messages
+                </p>
+              </button>  
+            </div>
+            <div class="col-lg-2 col-md-2 col-xs-4">
+              <button id="userBtn" class="btn rounded-0 text-white border-0 fs-12">
+                <img src="./assets/user.svg" alt="user">
+                <p id="greetUser" class="mb-0">
+                  Hi Guest!
+                </p>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
