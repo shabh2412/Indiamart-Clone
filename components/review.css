@@ -396,7 +396,7 @@
     display: flex;
     justify-content: center;
 }
-#viwMoreDiv a{
+#viwMoreDiv button{
     text-decoration: none;
     font-size: 14px;
     /* height: 14px; */
@@ -405,6 +405,7 @@
     padding: 10px 20px;
     color: #2D3192;
     border-radius: 5px;
+    background-color: transparent;
 }
 
 

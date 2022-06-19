@@ -124,7 +124,8 @@ function getReviews(){
     </div>
 
     <div id="viwMoreDiv">
-        <a href="#">View More Reviews</a>
+        <button>View More Reviews
+        </button>
     </div>
 </div>
 

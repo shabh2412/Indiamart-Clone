@@ -26,6 +26,12 @@ let appendData = (data, inner) => {
 
         let latest = document.createElement("h4");
         latest.innerText = "Get Latest Price";
+        latest.setAttribute("data-bs-toggle", "modal");
+        latest.setAttribute("data-bs-target", "#exampleModal");
+        latest.addEventListener("click", function () {
+            storeElement(el);
+          });
+          latest.style.cursor = "pointer"
 
         let button = document.createElement("button");
         button.innerText = "Yes, I am Interested!";
@@ -38,8 +44,14 @@ let appendData = (data, inner) => {
         let interest = document.createElement("p")
         interest.innerText = "Interested in this product?";
 
-        let get = document.createElement("h4");
+        let get = document.createElement("h6");
         get.innerText = "Get Best Quote";
+        get.setAttribute("data-bs-toggle", "modal");
+        get.setAttribute("data-bs-target", "#exampleModal");
+        get.addEventListener("click", function () {
+            storeElement(el);
+          });
+          get.style.cursor = "pointer"
 
         div2.append(image);
 

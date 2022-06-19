@@ -1,8 +1,6 @@
 function one1() {
-    // window.location.href = "innerProduct.html";
+    window.location.href = "innerProduct.html";
     localStorage.setItem("send", JSON.stringify(makeup));
-    let send = JSON.parse(localStorage.getItem("send"));
-    appendDataUpper(send, "upper_right");
   }
 function two2() {
   window.location.href = "innerProduct.html";
