@@ -18,7 +18,7 @@ function bsorder() {
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body d-flex">
           <div class="image">
             <div class="image_img"></div>
             <div class="span">
@@ -105,7 +105,7 @@ function bsorder() {
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body d-flex">
           <div class="image1">
             <div class="image1_img"></div>
             <div class="span1">
@@ -191,7 +191,7 @@ function bsorder() {
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body d-flex">
           <div class="image2">
             <div class="image2_img"></div>
             <div class="span2">
@@ -281,7 +281,7 @@ function bsorder() {
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body d-flex">
           <div>
             <h5 class="sim">Shop Similar Products Now</h5>
             <div class="similar">
