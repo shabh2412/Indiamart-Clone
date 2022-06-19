@@ -54,6 +54,7 @@ loginModalNumberToOTPBtn.addEventListener('click', () => {
   // console.log(contact);
   otpVerify = generateOTP(otpVerify);
   console.log('otpVerify:', otpVerify)
+  alert("otp:",otpVerify)
 });
 let otpModalSection = document.getElementById('otpModalSection');
 otpModalSection.innerHTML = createModal('otpModal', 'otpModalLabel', 'Login with One Time Password (OTP)', `Enter the 4 digit One Time Password (OTP) sent to your Mobile Number`, 'otp', 'otpInput', 'X-X-X-X', 'otpModalButton', '');
@@ -96,6 +97,7 @@ signupModalButton.addEventListener('click', () => {
   contact = document.getElementById('signupPhoneNumber').value;
   otpVerify = generateOTP(otpVerify);
   console.log(otpVerify);
+  alert(otpVerify);
 });
 let signupOtpModalButton = document.getElementById('signupOtpModalButton');
 signupOtpModalButton.addEventListener('click', () => {
@@ -106,5 +108,6 @@ signupOtpModalButton.addEventListener('click', () => {
     users.push(user);
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('currentUser', JSON.stringify(user));
+    window.location.reload();
   }
 });
