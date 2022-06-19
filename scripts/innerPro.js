@@ -5,7 +5,7 @@ let orderImg = JSON.parse(localStorage.getItem("orderImg"));
 
 let appendData = (data, inner) => {
     let container = document.getElementById(inner);
-
+    container.innerHTML = null;
     data.forEach(function (el) {
         let div = document.createElement("div");
 
