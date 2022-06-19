@@ -2,9 +2,9 @@
 
 ## About
 
-## Live Project Link : [To Be Added]
+## Live Project Link : https://indiamart-clone-masai.netlify.app/
 
-## Tech Stack
+## Tech Stack: Javascript, Bootstrap, jQuery, Slick Slider, ES-6
 
 ## Contributors
 
