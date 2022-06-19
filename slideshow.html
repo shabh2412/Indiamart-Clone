@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <style>
+        
+        .Slideshow_Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    width: 75%;
+    margin: auto;
+
+}
+
+    .slick-prev ,.slick-arrow{
+        margin-left: 10px;
+        margin-right: 10px;
+        display: inline-block;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 30px;
+        background-color: #fff;
+        color: rgb(5, 5, 136);
+        height: 60px;
+        width: 60px;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
+        border-radius: 50%;
+        z-index: 1;
+        
+    }
+
+.card{
+    width: 21.3%;
+    height: 270px;
+    color: #fff;
+    position: relative;
+}
+
+.card img{
+    display: block;
+    width: 100%;
+    height: 230px;
+}
+
+
+.name{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    background-color: rgba(47, 45, 45, 0.692);
+    transition: all .3s ease;
+    opacity:1 ;
+ 
+}
+
+.card:hover .name{
+    height: 50%;
+    background-color: rgba(47, 45, 45, 0.692);
+
+}
+
+.name div{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name div:hover{
+ text-decoration: underline;
+}
+
+.slideBtn{
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    color: teal;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0;
+    height: 0;
+}
+
+
+.name>div{
+    margin-top: 15px;
+}
+
+.card:hover .slideBtn{
+    opacity: 1;
+    padding: 5px 15px 5px 15px;
+    font-size: 15px;
+    height: auto;
+
+}
+
+.slideBtn:hover{
+    text-decoration: underline;
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+  <div id="slideDiv">
+    <div class="Slideshow_Container">
+    
+        <div class="card" id="c1"></div>
+        <div class="card" id="c2"></div>
+        <div class="card" id="c3"></div>
+        <div class="card" id="c4"></div>
+        <div class="card" id="c5"></div>
+        <div class="card" id="c6"></div>
+        <div class="card" id="c7"></div>
+        <div class="card" id="c8"></div>
+        
+    
+       </div> 
+  </div>
+
+       <script>
+        //this is the slideshow data
+        let data=[
+         {name:"Foundation",url:"https://3.imimg.com/data3/BX/CS/MY-3792183/foundation-250x250.jpg"},
+         {name:"Pan Stick Foundation",url:"https://3.imimg.com/data3/LX/OI/MY-3792183/pan-stick-250x250.jpg"},
+         {name:"Compact",url:"https://3.imimg.com/data3/YL/EJ/MY-3792183/01-250x250.jpg"},
+         {name:"Fairness Scrub",url:"https://3.imimg.com/data3/QC/FL/MY-3792183/fairness-scrub-250x250.jpg"},
+         {name:"Nail enamel",url:"https://3.imimg.com/data3/BK/MD/MY-3792183/01-250x250.jpg"},
+         {name:"Lip Gloss",url:"https://3.imimg.com/data3/RK/XF/MY-3792183/01-250x250.jpg"},
+         {name:"Fruit Bleach",url:"https://3.imimg.com/data3/NL/QG/MY-3792183/fruit-bleach-250x250.jpg"},
+         {name:"Lip Balm",url:"https://3.imimg.com/data3/US/UJ/MY-3792183/lip-balm-250x250.jpg"},
+         
+     ]
+ 
+         //this function is for appending data in slideshow container
+    let append=()=>{
+    
+    let c=0;
+    for(let i=0;i<data.length;i++)
+    {
+        //this is the div used for slide
+        let div=document.getElementById("c"+(c+1));
+        div.innerHTML=null;
+ 
+        let img=document.createElement("img");
+        img.src=data[i].url;
+ 
+        let div2=document.createElement("div");
+        div2.setAttribute("class","name");
+ 
+        let name=document.createElement("div");
+        name.innerText=data[i].name;
+ 
+        let div3=document.createElement("div");
+ 
+ 
+        let btn=document.createElement("button");
+        btn.setAttribute("class","slideBtn");
+        btn.innerText="Get Best Quote";
+ 
+        div3.append(btn)
+ 
+        div2.append(name,div3);
+ 
+        div.append(img,div2);
+        c++;
+ 
+    }
+
+    
+ 
+   }
+ 
+   append();
+ </script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+       crossorigin="anonymous">
+       </script>
+
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script >     
+
+
+$('.Slideshow_Container').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+//   infinite: true,
+  autoplaySpeed: 2000,
+});
+
+
+document.querySelector(".slick-prev").innerText="<";
+document.querySelector(".slick-next").innerText=">";
+
+
+</script>
+</body>
+
+
+</html>
