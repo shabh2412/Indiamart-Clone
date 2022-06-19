@@ -21,6 +21,7 @@ div{
     height: 695.95px;
     width: 1276px;
     margin: 10px 10px 0 10px;
+    padding: 10px;
     /* border: 1px dashed green; */
 }
 
@@ -28,7 +29,7 @@ div{
     margin: auto;
     height: 302px;
     width: 1201px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 #aboutDiv{

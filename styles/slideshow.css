@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 300px;
-  width: 75%;
+  height: auto;
+  width: 100%;
   margin: auto;
 }
 
@@ -29,6 +29,10 @@
   height: 270px;
   color: #fff;
   position: relative;
+}
+
+.slick-track .card {
+  border: transparent !important;
 }
 
 .card img{
