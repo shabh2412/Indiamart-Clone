@@ -26,8 +26,8 @@
 
 ## Sneak Peak
 
-![signin ss (1)](https://user-images.githubusercontent.com/55716054/174484268-dd11246f-3ec0-43de-82e5-7a0cc666df98.jpg)
-![screenzy-1655647176601](https://user-images.githubusercontent.com/55716054/174484817-573cda8d-23c2-41b8-801f-4fabef9c7154.jpg)
-![screenzy-1655647275142](https://user-images.githubusercontent.com/55716054/174484886-baf9ccda-dcb7-4bf3-8693-6db91b091a56.jpg)
-![screenzy-1655647359337](https://user-images.githubusercontent.com/55716054/174484963-3ae1db8b-b550-4475-8e5f-b78f40b401ed.jpg)
+* ![signin ss (1)](https://user-images.githubusercontent.com/55716054/174484268-dd11246f-3ec0-43de-82e5-7a0cc666df98.jpg)
+* ![screenzy-1655647176601](https://user-images.githubusercontent.com/55716054/174484817-573cda8d-23c2-41b8-801f-4fabef9c7154.jpg)
+* ![screenzy-1655647275142](https://user-images.githubusercontent.com/55716054/174484886-baf9ccda-dcb7-4bf3-8693-6db91b091a56.jpg)
+* ![screenzy-1655647359337](https://user-images.githubusercontent.com/55716054/174484963-3ae1db8b-b550-4475-8e5f-b78f40b401ed.jpg)
 
