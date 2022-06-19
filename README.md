@@ -6,3 +6,7 @@
  2. CSS
  3. Javascript
  4. Git
+
+## Installation and Setup
+* CLone down this repository using this [link](https://github.com/shabh2412/Indiamart-Clone/) and open index.html file.
+* Deployed Netlify [link](https://indiamart-clone-masai.netlify.app/)
