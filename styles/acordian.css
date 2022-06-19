@@ -101,7 +101,7 @@
   }
   
   #right_inner>div>div:first-child>p{
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
     text-align: center;
   }
   
