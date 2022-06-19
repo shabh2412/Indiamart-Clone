@@ -1,5 +1,5 @@
 let Footer = ()=> {
-  return `<div class="cf_ftHd">
+  return `<div class="cf_ftHd mt-3">
   <div class="row">
     <div class="col-lg-1"></div>
     <div class="col-lg-6">

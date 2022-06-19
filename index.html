@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
   <link rel="stylesheet" href="./styles/slideshow.css">
+  <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body class="bg-light-purple">
@@ -231,10 +232,20 @@
 
   <!-- --------Reviews & Ratings Section starts here-------- -->
 
-  <div id="homeMainDiv2"></div>
+  <div id="homeMainDivReviews"></div>
+  <div id="footerSection">hi</div>
 </body>
 
 </html>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+   crossorigin="anonymous">
+</script>
 <!-- Navbar Script -->
 <script type="module">
   import MainNavbar from './components/MainNavbar.js';
@@ -363,14 +374,6 @@
 <script src="scripts/searchbar.js"></script>
 <script src="scripts/db.js"></script>
 <script type="module" src="scripts/homepage.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-  integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer">
-</script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-   crossorigin="anonymous">
-</script>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
@@ -445,4 +448,8 @@
     document.querySelector(".slick-prev").innerText="<";
     document.querySelector(".slick-next").innerText=">";
 
+</script>
+<script type="module">
+  import Footer from './components/Footer.js';
+  document.getElementById('footerSection').innerHTML = Footer();
 </script>

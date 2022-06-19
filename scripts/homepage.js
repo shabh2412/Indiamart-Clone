@@ -1,4 +1,4 @@
 import getReviews from "../components/reviews.js";
 
-var reviewContainer = document.getElementById("homeMainDiv2");
+var reviewContainer = document.getElementById("homeMainDivReviews");
 reviewContainer.innerHTML = getReviews();
